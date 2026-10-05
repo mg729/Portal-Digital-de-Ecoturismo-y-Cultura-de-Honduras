@@ -1,13 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contacto</title>
     <link rel="stylesheet" href="./css/style.css">
 </head>
+
 <body>
     <header>
+        <div class="logo-area">
+            <h1>nomLogo</h1>
+
+        </div>
         <!--Menu de Navegacion-->
         <nav>
             <ul>
@@ -20,7 +26,58 @@
         </nav>
     </header>
     <main>
-        
+        <section>
+            <h2>Directorio de Oficinas</h2>
+            <address>
+                <strong>Oficina Principal de Informacion Turistica (Tegucigalpa)</strong>
+                <br>
+                Centro Civico Gubernamental, Torre 1, Piso 5.<br>
+                Tegucigalpa, Francisco Morazán, Honduras.
+            </address>
+            <hr>
+            <h3>Telefonos de Contacto</h3>
+            <ul>
+                <li><strong>Emergencias Nacionales:</strong> <a href="tel:911">911</a></li>
+                <li><strong>Telefono de las oficina:</strong><a href="#">+504 1122-3344</a></li>
+                <li></li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Envianos tus consultas</h2>
+            <form action="" method="post">
+                <fieldset>
+                    <legend>1. Su Informacion</legend>
+                    <div class="campo">
+                        <label for="">Nombre</label>
+                        <input type="text" required>
+                    </div>
+                    <div class="campo">
+                        <label for="">Correo</label>
+                        <input type="text" required>
+                    </div>
+                    <div class="campo">
+                        <label for="">Motivo de la comunicacion</label>
+                        <select name="" id="">
+                            <option value=""> --Seleccione una opcion--</option>
+                            <option value="consulta">Consulta</option>
+                            <option value="comentario">Comentario</option>
+                            <option value="asistencia">Solicitud de Asistencia Ciudadana</option>
+                        </select>
+                    </div>
+                </fieldset>
+                <fieldset>
+                    <legend>2. Mensaje:</legend>
+                    <div class="campo">
+                        <textarea name="mensaje" id="mensaje" rows="5" cols="40" required>
+
+                        </textarea>
+                    </div>
+                </fieldset><br>
+                <button type="submit">Enviar</button>
+            </form>
+        </section>
     </main>
 </body>
+
 </html>
