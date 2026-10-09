@@ -6,17 +6,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cultura</title>
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="shortcut icon" href="./img/logo.png" type="image/x-icon">
 </head>
 
 <body>
-    <header>
-        <div class="logo-area">
-            <h1>nomLogo</h1>
-
+    <header class="navbar">
+        <div class="navbar__logo__area">
+            <img class="logo" src="./img/logo.png" alt="logo">
+            <h1><a href="index.html">EcoHonduras</a></h1>
         </div>
         <!--Menu de Navegacion-->
         <nav>
-            <ul>
+            <ul class="navbar__lista">
                 <li><a href="index.html">Inicio</a></li>
                 <li><a href="destinos.html">Destinos y Rutas Turisticas</a></li>
                 <li><a href="cultura.html">Cultura, Patrimonio y Gastronomia Nacional</a></li>
@@ -27,138 +28,166 @@
     </header>
     <main>
         <!-- Proceres-->
-        <section>
-            <h2>Semblanza historica</h2>
-            <p>Sección dedicada a la identidad hondureña: semblanza histórica sobre el pensamiento unionista de
-                Francisco Morazán y los próceres patrios, reconocimiento de las etnias vivas</p>
-            <article>
+        <section class="section-card">
+            <div class="encabezado-card">
+                <h2>Semblanza historica</h2>
+                <p>Sección dedicada a la identidad hondureña: semblanza histórica sobre el pensamiento unionista de
+                    Francisco Morazán y los próceres patrios, reconocimiento de las etnias vivas</p>
+            </div>
+            <article class="card">
                 <h3>¿Quien fue Francisco Morazan?</h3>
-                <p></p>
+                <figure>
+                    <img src="./img/Francisco_Morazan.JPG" alt="Imagen de Francisco Morazan">
+                    <figcaption>Imagen de Francisco Morazan</figcaption>
+                </figure>
+                <p>Francisco Morazan, fue un militar y político hondureño que gobernó a la República Federal
+                    Centroamericana durante el turbulento período de 1830 a 1839.</p>
+                <p>Saltó a la fama luego de su victoria en la legendaria batalla de La Trinidad el 11 de noviembre de
+                    1827. Desde entonces, y hasta su derrota en Guatemala en 1840, Morazán dominó la escena política y
+                    militar de Centroamérica.</p>
             </article>
-            <article>
+            <article class="card">
                 <h3>Jose Cecilio del Valle</h3>
                 <figure>
-                    <img src="" alt="" srcset="">
-                    <figcaption></figcaption>
+                    <img src="./img/Cecilio_del_Valle.jpg" alt="Imagen de Jose Cecilio del Valle">
+                    <figcaption>Imagen de Jose Cecilio del Valle.</figcaption>
                 </figure>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Optio, unde!</p>
+                <p>Jose Cecilio del Valle fue un filósofo, político, abogado y periodista hondureño. Realizó sus
+                    estudios en la Real y Pontificia Universidad de San Carlos Borromeo. Su espíritu investigador
+                    penetró en los estrados del conocimiento y su poderosa inteligencia lo llevó a cristalizar
+                    enseñanza, pensamiento y ciencia. Escribió sobre matemáticas, filosofía, geografía, historia,
+                    botánica, mineralogía y derecho.</p>
             </article>
-            <article>
+            <article class="card">
                 <h3>Lempira</h3>
                 <figure>
-                    <img src="" alt="" srcset="">
-                    <figcaption></figcaption>
+                    <img src="./img/Lempira.jpg" alt="">
+                    <figcaption>Imagen del cacique lempira</figcaption>
                 </figure>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Optio, unde!</p>
+                <p>Aunque su nombre fuese "Erandique" (según la "Probanza de Méritos" redactada por Rodrigo Ruíz), fue
+                    un capitán de guerra y líder de los lencas que luchó contra los españoles durante la década de 1530.
+                    En los documentos escritos durante la conquista española, es mencionado con el nombre de El Lempira.
+                </p>
             </article>
-            <article>
+            <article class="card">
                 <h3>Jose Trinidad Cabañas</h3>
                 <figure>
-                    <img src="" alt="" srcset="">
-                    <figcaption></figcaption>
+                    <img src="./img/jose_cabanas.jpg" alt="Imagen de José Trinidad Francisco Cabañas">
+                    <figcaption>Imagen de José Trinidad Francisco Cabañas</figcaption>
                 </figure>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Optio, unde!</p>
+                <p>José Trinidad Francisco Cabañas fue un militar con el grado de General de División y político
+                    hondureño, electo como Presidente constitucional del Estado de Honduras en el periodo de 1852 a
+                    1855. Fue un defensor de las ideas unionistas de Centroamérica.</p>
             </article>
         </section>
         <hr>
 
         <!--Etnias-->
-        <section>
-            <h2>Etnias</h2>
-            <article>
+        <section class="section-card">
+            <div class="encabezado-card">
+                <h2>Etnias</h2>
+            </div>
+            <article class="card">
                 <h3>Lencas</h3>
                 <figure>
-                    <img src="" alt="">
-                    <figcaption></figcaption>
+                    <img src="./img/Lencas.jpg" alt="Imagen de los lencas">
+                    <figcaption>Lencas</figcaption>
                 </figure>
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facilis, tempore!</p>
+                <p>Los lencas son un grupo étnico mesoamericano, que hablan las llamadas lenguas lencas y que ocupan
+                    parte del territorio de Honduras y El Salvador desde tiempos precolombinos.</p>
             </article>
-            <article>
+            <article class="card">
                 <h3>Garífunas</h3>
                 <figure>
-                    <img src="" alt="">
-                    <figcaption></figcaption>
+                    <img src="./img/garifuna.jpg" alt="Imagen de los Garifunas">
+                    <figcaption>Garifunas</figcaption>
                 </figure>
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facilis, tempore!</p>
+                <p>Los garífunas o garínagu son un pueblo descendiente de africanos y pueblos originarios caribes y
+                    arahuacos de ciertas regiones del Caribe, que principalmente reside en Honduras, Belice y Guatemala,
+                    donde hoy su cultura es muy celebrada. También se les conoce como garinagu, indios negros, caribes
+                    negros o Black Caribs.</p>
             </article>
-            <article>
+            <article class="card">
                 <h3>Misquitos</h3>
                 <figure>
-                    <img src="" alt="">
-                    <figcaption></figcaption>
+                    <img src="./img/misquitos.jpg" alt="Imagen de los misquitos">
+                    <figcaption>Misquitos o Miskitos</figcaption>
                 </figure>
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facilis, tempore!</p>
+                <p>Los misquitos o miskitos son un grupo étnico indígena de Centroamérica, cuyo idioma nativo pertenece
+                    a la familia de lenguas misumalpas, que forman parte del grupo lenmichí de las lenguas
+                    Macro-chibchas.Su territorio, que se extiende desde San Pedro sula en Honduras hasta más al sur del
+                    Río Grande de Matagalpa en Nicaragua, permaneció aislado de la conquista española.</p>
             </article>
-            <article>
+            <article class="card">
                 <h3>Tolupanes</h3>
                 <figure>
-                    <img src="" alt="">
-                    <figcaption></figcaption>
+                    <img src="./img/tolupanes.jpg" alt="Imagen de los tolupanes">
+                    <figcaption>Tolupanes</figcaption>
                 </figure>
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facilis, tempore!</p>
+                <p>Los Tolupanes es un pueblo indígena localizado en la República de Honduras. Se les conoce también
+                    como Xicaques y hablan diversas lenguas como el xicaque-tol. El término jicaque fue utilizado por
+                    los colonizadores para referirse a los diferentes grupos rebeldes de Tegucigalpa y en los últimos
+                    tiempos para la población jicaque-tol de El Palmar Buena Vista Santa Bárbara. </p>
             </article>
-            <article>
+            <article class="card">
                 <h3>Chortís</h3>
                 <figure>
-                    <img src="" alt="">
-                    <figcaption></figcaption>
+                    <img src="./img/chortis.jpg" alt="Imagen de los chortís">
+                    <figcaption>Chortis</figcaption>
                 </figure>
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facilis, tempore!</p>
+                <p>Los chortís son un pueblo indígena de Guatemala, El Salvador y Honduras, y descendientes de la
+                    civilización maya cuyo centro cultural y político se situaba en Copán. En la actualidad hay
+                    aproximadamente más de 60 000 chortís, alrededor de 52 000 especialmente en los municipios de
+                    Camotan, Jocotan y Olopa en el departamento de Chiquimula, Guatemala, y 11 000 en los departamentos
+                    de Copán, Ocotepeque, Cortés y Santa Bárbara en el noroeste de Honduras.</p>
             </article>
         </section>
-<hr>
-
+        <hr>
         <!--Gastronomia-->
-        <section>
-            <h2>Gastronomia Tipica del Pais</h2>
-            <p>catálogo visual de la gastronomía típica nacional</p>
+        <section class="section-card">
+            <div class="encabezado-card">
+                <h2>Gastronomia Tipica del Pais</h2>
+                <p>catálogo visual de la gastronomía típica nacional</p>
 
+            </div>
             <!--Platillo-->
-            <article class="contenedor">
-                <h3>baleadas </h3>
+            <article class="card">
+                <h3>baleadas</h3>
                 <figure>
-                    <img src="" alt="">
-                    <figcaption>Descripcion img</figcaption>
+                    <img src="./img/baleadas.jpg" alt="baleadas">
+                    <figcaption>Baleadas</figcaption>
                 </figure>
             </article>
             <!--Platillo-->
-            <article class="contenedor">
-                <h3>sopa de caracol</h3>
+            <article class="card">
+                <h3>Sopa de caracol</h3>
                 <figure>
-                    <img src="" alt="">
-                    <figcaption>Descripcion img</figcaption>
+                    <img src="./img/sopa_caracol.jpg" alt="Sopa de caracol">
+                    <figcaption>Sopa de caracol</figcaption>
                 </figure>
             </article>
             <!--Platillo-->
-            <article class="contenedor">
-                <h3>tikin xik garífuna</h3>
+            <article class="card">
+                <h3>Tikin xik garífuna</h3>
                 <figure>
-                    <img src="" alt="">
-                    <figcaption>Descripcion img</figcaption>
+                    <img src="./img/tikin xik garífuna.jpg" alt="tikin xik garífuna">
+                    <figcaption>tikin xik garífuna</figcaption>
                 </figure>
             </article>
             <!--Platillo-->
-            <article class="contenedor">
-                <h3> atol de elote</h3>
+            <article class="card">
+                <h3>Atol de elote</h3>
                 <figure>
-                    <img src="" alt="">
-                    <figcaption>Descripcion img</figcaption>
+                    <img src="./img/atol_de_elote.jpg" alt="atol de elote">
+                    <figcaption>Atol de elote</figcaption>
                 </figure>
             </article>
             <!--Platillo-->
-            <article class="contenedor">
-                <h3>café de altura</h3>
+            <article class="card">
+                <h3>Café de altura</h3>
                 <figure>
-                    <img src="" alt="">
-                    <figcaption>Descripcion img</figcaption>
-                </figure>
-            </article>
-            <!--Platillo-->
-            <article class="contenedor">
-                <h3>Nombre del platillo</h3>
-                <figure>
-                    <img src="" alt="">
-                    <figcaption>Descripcion img</figcaption>
+                    <img src="./img/cafe_altura.jpg" alt="café de altura">
+                    <figcaption>Café de altura</figcaption>
                 </figure>
             </article>
         </section>

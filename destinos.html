@@ -6,17 +6,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Destinos</title>
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="shortcut icon" href="./img/logo.png" type="image/x-icon">
 </head>
 
 <body>
-    <header>
-        <div class="logo-area">
-            <h1>nomLogo</h1>
-
+    <header class="navbar">
+        <div class="navbar__logo__area">
+            <img class="logo" src="./img/logo.png" alt="logo">
+            <h1><a href="index.html">EcoHonduras</a></h1>
         </div>
         <!--Menu de Navegacion-->
         <nav>
-            <ul>
+            <ul class="navbar__lista">
                 <li><a href="index.html">Inicio</a></li>
                 <li><a href="destinos.html">Destinos y Rutas Turisticas</a></li>
                 <li><a href="cultura.html">Cultura, Patrimonio y Gastronomia Nacional</a></li>
@@ -29,15 +30,22 @@
         <section>
             <!--Ruta 1-->
             <article>
-                <h2>Nombre de la ruta</h2>
+                <h2>Ruta Maya y Arqueología: Copán Ruinas</h2>
                 <div class="info-ruta">
-                    Descripcion
-                    Principales Atractivos
-                    Dificultad de Acceso
+                    <ul>
+                        <li><strong>Descripcion:</strong> Un valle verde rodeado de montañas boscosas en el occidente
+                            del país, famoso por albergar las ruinas de una de las ciudades más importantes de la
+                            antigua civilización maya.</li>
+                        <li><strong>Principales Atractivos:</strong> Parque Arqueológico (Escalinata de los
+                            Jeroglíficos, estelas mayas, juego de pelota), Reserva de aves Macaw Mountain y aguas
+                            termales.</li>
+                        <li><strong>Dificultad de Acceso:</strong> Fácil. La carretera desde San Pedro Sula está
+                            pavimentada y en buen estado.</li>
+                    </ul>
                 </div>
                 <div class="tabla">
                     <table>
-                        <caption>Mas informacion sobre las Rutas</caption>
+                        <caption>Mas informacion sobre la Ruta</caption>
                         <thead>
                             <tr>
                                 <th>Ciudad de Origen</th>
@@ -48,30 +56,32 @@
                         </thead>
                         <tbody>
                             <tr>
-                                <td>Ciudad origen 1</td>
-                                <td>3984</td>
+                                <td>San Pedro Sula</td>
+                                <td>160</td>
                                 <td>2h y 15min</td>
-                                <td>23m</td>
+                                <td>600m</td>
                             </tr>
                             <tr>
-                                <td>Ciudad origen 1</td>
-                                <td>3984</td>
-                                <td>2h y 15min</td>
-                                <td>23m</td>
+                                <td>Tegucigalpa</td>
+                                <td>398</td>
+                                <td>7h y 15min</td>
+                                <td>600m</td>
                             </tr>
                         </tbody>
                         <tfoot></tfoot>
                     </table>
                 </div>
             </article>
-
+            <br>
             <!--Ruta 2-->
             <article>
-                <h2>Nombre de la ruta</h2>
+                <h2>Ecoturismo y Bosques Nublados: Parque Nacional La Tigra</h2>
                 <div class="info-ruta">
-                    Descripcion
-                    Principales Atractivos
-                    Dificultad de Acceso
+                    <ul>
+                        <li><strong>Descripcion:</strong> Un majestuoso bosque nublado de clima frío y densa neblina, considerado el pulmón verde y principal fuente de agua de la capital hondureña.</li>
+                        <li><strong>Principales Atractivos:</strong> Senderismo de montaña, cascadas ocultas, antiguas minas de oro (El Rosario) y avistamiento de aves como el quetzal.</li>
+                        <li><strong>Dificultad de Acceso:</strong> Moderada. Se puede llegar en vehículo hasta los centros de visitantes, pero requiere caminar por senderos inclinados para explorar el parque.</li>
+                    </ul>
                 </div>
                 <div class="tabla">
                     <table>
@@ -86,30 +96,32 @@
                         </thead>
                         <tbody>
                             <tr>
-                                <td>Ciudad origen 1</td>
-                                <td>3984</td>
-                                <td>2h y 15min</td>
-                                <td>23m</td>
+                                <td>Tegucigalpa</td>
+                                <td>22</td>
+                                <td>1h y 34min</td>
+                                <td>1800m</td>
                             </tr>
                             <tr>
-                                <td>Ciudad origen 1</td>
-                                <td>3984</td>
-                                <td>2h y 15min</td>
-                                <td>23m</td>
+                                <td>Comayagua</td>
+                                <td>110</td>
+                                <td>2h y 30min</td>
+                                <td>1800m</td>
                             </tr>
                         </tbody>
                         <tfoot></tfoot>
                     </table>
                 </div>
             </article>
-
+            <br>
             <!--Ruta 3-->
             <article>
-                <h2>Nombre de la ruta</h2>
+                <h2>Caribe y Arrecifes: Roatán, Islas de la Bahía</h2>
                 <div class="info-ruta">
-                    Descripcion
-                    Principales Atractivos
-                    Dificultad de Acceso
+                    <ul>
+                        <li><strong>Descripcion:</strong>Isla paradisíaca en el Mar Caribe hondureño, famosa por sus playas de arena blanca, aguas turquesas cristalinas y por estar rodeada por el Sistema Arrecifal Mesoamericano.</li>
+                        <li><strong>Principales Atractivos:</strong> Playa de West Bay, buceo y snorkel en arrecifes de coral, nado con delfines y gastronomía garífuna.</li>
+                        <li><strong>Dificultad de Acceso:</strong> El acceso es principalmente por vía aérea (vuelos directos) o tomando el ferry desde la ciudad costera de La Ceiba.</li>
+                    </ul>
                 </div>
                 <div class="tabla">
                     <table>
@@ -124,22 +136,23 @@
                         </thead>
                         <tbody>
                             <tr>
-                                <td>Ciudad origen 1</td>
-                                <td>3984</td>
-                                <td>2h y 15min</td>
-                                <td>23m</td>
+                                <td>La Ceiba (vía Ferry)</td>
+                                <td>65</td>
+                                <td>1h y 30min</td>
+                                <td>10m</td>
                             </tr>
                             <tr>
-                                <td>Ciudad origen 1</td>
-                                <td>3984</td>
-                                <td>2h y 15min</td>
-                                <td>23m</td>
+                                <td>Tegucigalpa (vía terrestre + Ferry)</td>
+                                <td>465</td>
+                                <td>8h y 30min</td>
+                                <td>10m</td>
                             </tr>
                         </tbody>
                         <tfoot></tfoot>
                     </table>
                 </div>
             </article>
+            <br>
         </section>
     </main>
 </body>

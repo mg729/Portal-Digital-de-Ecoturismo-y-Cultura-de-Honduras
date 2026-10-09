@@ -1,22 +1,23 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Inicio</title>
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="shortcut icon" href="./img/logo.png" type="image/x-icon">
 </head>
 
 <body>
-    <header>
-        <div class="logo-area">
-            <h1>nomLogo</h1>
-
+    <header class="navbar">
+        <div class="navbar__logo__area">
+            <img class="logo" src="./img/logo.png" alt="logo">
+            <h1><a href="index.html">EcoHonduras</a></h1>
         </div>
         <!--Menu de Navegacion-->
         <nav>
-            <ul>
+            <ul class="navbar__lista">
                 <li><a href="index.html">Inicio</a></li>
                 <li><a href="destinos.html">Destinos y Rutas Turisticas</a></li>
                 <li><a href="cultura.html">Cultura, Patrimonio y Gastronomia Nacional</a></li>
@@ -25,44 +26,106 @@
             </ul>
         </nav>
     </header>
-    <!-- -->
+    <!--CONTENIDO PRINCIPAL -->
     <main>
-        <!-- 3 sections dentro de un div? o asi?-->
-        <section>
-            <h2>Destinos Insignia</h2>
-            <article class="destinos">destino 1</article>
-            <article class="destinos">destino 2</article>
-            <article class="destinos">destino 3</article>
+        <section class="hero">
+            <h2>Bienvenidos a Honduras</h2>
+            <article>
+                <figure>
+                    <img src="./img/bandera-hero.jpg" alt="Bandera de honduras" style=" width: 80%;">
+                </figure>
+                <p><i>Descubre la belleza de nuestro pais</i></p>
+            </article>
+        </section>
+        <br>
+        <section class="section-card">
+            <div class="encabezado-card">
+                <h2>Destinos Insignia</h2>
+            </div>
+            <article class="card">
+                <h3>Parque Arqueológico de Copán Ruinas</h3>
+                <figure>
+                    <img src="./img/Parque-copan-ruinas.jpg" alt="">
+                    <figcaption><i>Ubicado en Copan.</i></figcaption>
+                </figure>
+                <p>El alto grado de refinamiento que alcanzaron los Mayas de Copán se manifiesta de manera especial en
+                    la escultura en relieve que adorna sus edificios. La calidad artística de las esculturas mosaicas,
+                    los altares y esculturas tridimensionales talladas en piedra distinguen a Copán del resto de las
+                    ciudades Mayas.</p>
+            </article>
+            <article class="card">
+                <h3>Arrecife Coralino</h3>
+                <figure>
+                    <img src="./img/arrecife-coral.jpg" alt="">
+                    <figcaption><i>Ubicado en Islas de la Bahia.</i></figcaption>
+                </figure>
+                <p>Los Cayos Cochinos son un archipiélago de islas y cayos que está formado por dos pequeñas islas y 14
+                    cayos más pequeños de origen coralino situados 30 kilómetros al noreste de La Ceiba en la costa
+                    norte de Honduras.</p>
+            </article>
+            <article class="card">
+                <h3>Parque Nacional Celaque</h3>
+                <figure>
+                    <img src="./img/parque-celaque.jpg" alt="imagen del parque Nacional Celaque">
+                    <figcaption><i>Ubicada entre los departamentos de Copán, Ocotepeque y Lempira.</i></figcaption>
+                </figure>
+                <p>Es un sitio natural protegido, situado en la República de Honduras, formado por montañas, mesetas,
+                    bosque nuboso y en donde se localiza el punto más alto del país Centroamericano.</p>
+            </article>
         </section>
 
-        <section>
+        <section class="list-container">
             <h2>Datos relevantes de la nacion</h2>
-            <article>Biodiversidad</article>
-            <article>Clima</article>
-            <article>Moneda</article>
-            <article>Ubicacion Geografica</article>
+            <ul class="list">
+                <li><strong>Biodiversidad</strong></li>
+                <ul>
+                    <li>La república de Honduras, es un país centroamericano, geográficamente ubicado dentro de los
+                        trópicos; lo que le permite que su naturaleza brinde un hábitat adecuado tanto para la flora,
+                        como para la fauna de especies especiales</li>
+                </ul>
+                <li><strong>Clima</strong></li>
+                <ul>
+                    <li>En Honduras, con raras excepciones, hay dos estaciones claramente secas, que son el invierno y
+                        la primavera, que coinciden con la mitad de noviembre hasta alcanzar los primeros cinco meses
+                        del año siguiente. Esto significa que el invierno tropical es seco y a veces muy frío. Y lo
+                        mismo ocurre, hasta cierto punto, con la primavera, que suele ser floreada pero de temperatura
+                        cálida</li>
+                </ul>
+                <li><strong>Moneda</strong></li>
+                <ul>
+                    <li>La moneda nacional del pais es "El Lempira (Lps)" desde el año 1931. Por lo que respecta al
+                        papel moneda, circulan billetes de 1, 2, 5, 10, 20, 50, 100, 200 y 500 lempiras</li>
+                </ul>
+                <li><strong>Ubicacion Geografica</strong></li>
+                <ul>
+                    <li>Honduras está limitada al norte por el mar Caribe, al este por el mismo mar y Nicaragua, al sur
+                        por Nicaragua, el golfo de Fonseca y El Salvador, y al oeste por Guatemala.</li>
+                </ul>
+            </ul>
         </section>
     </main>
+    <hr>
     <footer>
         <div class="footer-principal">
             <div class="">
                 <h4>Identidad y contacto</h4>
-                <figure>logo</figure>
-                <p>eslogan</p>
+                <figure>
+                    <img src="./img/logo.png" alt="logo" class="logo">
+                </figure>
+                <p><i>Descubre la belleza de nuestro pais</i></p>
                 <ul>
-                    <ol><a href="">Direccion</a></ol>
-                    <ol><a href="">num de telef </a></ol>
-                    <ol><a href="">Correo</a></ol>
-                    <ol><a href="">Horario de atencion</a></ol>
+                    <li><strong>Direccion:</strong> </li>
+                    <li>Numero Telefonico: </li>
+                    <li>Correo: </li>
                 </ul>
             </div>
             <div class="">
                 <h4>Enlaces</h4>
                 <ul>
-                    <ol><a href="">Destinos y Rutas Turisticas</a></ol>
-                    <ol><a href="">Cultura, Patrimonio y Gastronomia Nacional</a></ol>
-                    <ol><a href="">Reservaciones y Solicitud de Tours</a></ol>
-                    <ol><a href="">Contacto y Asistencia al Turista</a></ol>
+                    <li><a href="/destinos.html">Destinos y Rutas Turisticas</a></li>
+                    <li><a href="/cultura.html">Cultura, Patrimonio y Gastronomia Nacional</a></li>
+                    <li><a href="/reservaciones.html">Reservaciones y Sliicitud de Tours</a></li>
+                    <li><a href="contacto.html">Contacto y Asistencia al Turista</a></li>
                 </ul>
             </div>
             <div class="">
@@ -75,7 +138,7 @@
         </div>
         <hr>
         <div class="footer-secundario">
-            <p>Copyright: "&copy; 2026 [Institucion]. Todos los derechos reservados."</p>
+            <small>&copy; 2026 Portal de Turismo de Honduras. Todos los derechos reservados.</small>
         </div>
     </footer>
 </body>
