@@ -2,11 +2,14 @@
     INDICE:
     1. Variables 
     2. Body
-    . Logo
-    . Navbar
-    . Titulos
-    . Tablas
-    . Section y Article
+    3. Logo
+    4. Navbar
+    5. Titulos
+    6. Hero
+    7. Section y Article
+    8. Listas
+    9. Tablas
+    10. Formulario
 *******************************/
 
 /****************************
@@ -15,7 +18,7 @@
 :root {
     --color-primario: #0f66f2;
     --color-secundario: #004bc3;
-    --color-fondo: #10429f;
+    --color-fondo: #035ba3;
     --azul-cobalto: #0073CF;
     --azul-oscuro: #003F7D;
     --color-texto: #F2F2F2;
@@ -25,6 +28,7 @@
     --font-titulo: 3.6rem;
     --font-subtitulo: 2rem;
     --font-texto: 1.1rem;
+    --extra: 1.3rem;
 
     --radio-borde: 0.7rem;
     --padding-card: 1rem;
@@ -43,7 +47,7 @@ body {
 }
 
 /****************************
-    #. Logo
+    3. Logo
 ****************************/
 .logo {
     width: 15%;
@@ -51,7 +55,7 @@ body {
 }
 
 /****************************
-    #. Navbar
+    4. Navbar
 ****************************/
 .navbar {
     display: flex;
@@ -94,10 +98,44 @@ body {
     color: var(--color-primario);
 }
 
+/****************************
+    5. Titulos
+****************************/
+.titulo {
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: var(--font-subtitulo);
+    text-shadow: 2px 2px 5px var(--azul-cobalto);
+    text-indent: 20px;
+    margin: 5% 0 5% 0;
+}
 
+.subtitulo {
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: var(--font-subtitulo);
+    text-shadow: 2px 2px 5px var(--azul-cobalto);
+    text-indent: 20px;
+    margin: 2% 0 5% 0;
+}
+
+.subtitulo-card {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: var(--font-subtitulo);
+    text-decoration: underline;
+}
+
+.extra{
+    text-align: left;
+    margin-bottom: 10px;
+    font-size: var(--extra);
+    text-shadow: 2px 2px 5px var(--azul-cobalto);
+    text-indent: 20px;
+    margin: 2% 0 1% 0;
+}
 
 /****************************
-    #. Hero
+    6. Hero
 ****************************/
 .hero {
     display: flex;
@@ -114,7 +152,7 @@ body {
 }
 
 /****************************
-    #. Section y Article
+    7. Section y Article
 ****************************/
 .section-card {
     display: flex;
@@ -132,14 +170,6 @@ body {
     margin-bottom: 2%;
 }
 
-.section-card h2 {
-    text-align: center;
-    margin-bottom: 30px;
-    font-size: var(--font-subtitulo);
-    text-shadow: 2px 2px 5px var(--azul-cobalto);
-    text-indent: 20px;
-    margin: 5% 0 5% 0;
-}
 
 .card {
     background-color: var(--color-fondo);
@@ -154,12 +184,6 @@ body {
     text-align: center;
 }
 
-.card h3 {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-size: var(--font-subtitulo);
-    text-decoration: underline;
-}
-
 .card img {
     width: 100%;
     margin-bottom: 15px;
@@ -172,25 +196,136 @@ body {
 }
 
 /****************************
-    #. Listas
+    8. Listas
 ****************************/
-.list-container h2 {
-    text-align: center;
-    margin-bottom: 30px;
-    font-size: var(--font-subtitulo);
-    text-shadow: 2px 2px 5px var(--azul-cobalto);
-    text-indent: 20px;
-    margin: 5% 0 5% 0;
-}
 
 .list {
     border-left: 6px solid var(--dorado);
     background-color: var(--azul-cobalto);
-    margin: 5%;
+    margin: 2%;
     border-radius: var(--radio-borde);
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 
 .list li {
     padding: 1%;
+}
+
+.list a{
+    text-decoration: none;
+    color: var(--color-texto);
+    font-size: 1.1rem;
+    padding: 0.7rem;
+}
+/****************************
+    9. Tablas
+****************************/
+.tabla {
+    width: 100%;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: var(--radio-borde);
+    overflow: hidden;
+    margin: 2%;
+    max-width: 75rem;
+
+}
+
+.tabla caption {
+    caption-side: top;
+    padding: 10px;
+    font-size: 0.9rem;
+    font-weight: 700;
+}
+
+.tabla thead {
+    background-color: var(--azul-cobalto);
+    padding: 1%;
+}
+
+.tabla th {
+    padding: 12px 16px;
+    text-align: left;
+    font-size: 1.1rem;
+    border-bottom: 2px double var(--dorado);
+}
+
+.tabla td {
+    padding: 10px 15px;
+}
+
+/****************************
+    10. Formulario
+****************************/
+.formulario {
+    max-width: 560px;
+    margin: 2rem auto;
+    padding: 1.2rem;
+    background: var(--azul-cobalto);
+    border-radius: var(--radio-borde);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.formulario fieldset {
+    border: 2px solid var(--dorado);
+    padding: 1rem 1.2rem;
+}
+
+.formulario legend {
+    padding: 0 1rem;
+    font-weight: 600;
+}
+
+.campo {
+    margin-bottom: 1rem;
+    display: flex;
+    flex-direction: column;
+}
+
+label,
+.etiqueta {
+    margin-bottom: 4px;
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: var(--azul-oscuro);
+}
+
+input,
+select,
+textarea {
+    padding: 10px 12px;
+    border: 1.5px solid var(--borde);
+    border-radius: 6px;
+    font-size: 1rem;
+    font-family: inherit;
+}
+
+button {
+    padding: 8px 14px;
+    margin-top: 1rem;
+    border: none;
+    border-radius: 6px;
+    background: #F2F2F2;
+    cursor: pointer;
+}
+/****************************
+    11. Footer 
+****************************/
+.footer_eslogan{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+.directorio{
+    text-align: center;
+    padding-bottom: 1rem;
+}
+.directorio a{
+    text-decoration: none;
+    color: var(--color-texto);
+    font-size: 1.1rem;
+    padding: 0.7rem;
+}
+.footer-secundario{
+margin: 1rem 0.9rem;
 }
